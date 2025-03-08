@@ -9,11 +9,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 8px;
 }
 
 .header__botao {
     display: flex;
+    align-items: center;
+    justify-self: center;
     gap: 8px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -23,9 +25,13 @@
     vertical-align: middle;
     color: #57534E;
     text-decoration: none;
+    width: 80px;
+    height: 24px;
+}
+
+.header__link__texto {
     width: 48px;
     height: 24px;
-    gap: 8px;
 }
 
 .header__botao__imagem {
