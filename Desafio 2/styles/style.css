@@ -62,3 +62,127 @@
     line-height: 150%;
     height: 48px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.formulario__container {
+    background: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 528px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.formulario__titulo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.formulario__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #57534E;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+
+input:focus, select:focus {
+    border-color: #f97316; /* Laranja */
+    box-shadow: 0px 0px 5px rgba(249, 115, 22, 0.5); /* Laranja com opacidade */
+}
+
+.erro input {
+    border-color: #dc2626 !important; /* Vermelho */
+}
+
+
+.erro-email {
+    display: none;
+    color: #dc2626; /* Vermelho */
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+
+.erro .erro-email {
+    display: block;
+}
+.upload-container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upload-container img {
+    width: 40px;
+    margin-bottom: 8px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: #57534E;
+    font-weight: 500;
+}
+
+.formulario__subtitulo {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 16px;
+}
+
+.formulario__linha {
+    display: flex;
+    gap: 16px;
+}
+
+.formulario__grupo input[readonly] {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
